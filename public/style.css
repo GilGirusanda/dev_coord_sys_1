@@ -1,0 +1,24 @@
+p {
+  padding: 10px;
+  background-color: #ffaaff;
+}
+
+.current-location-marker {
+    background-color: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.default-location-marker {
+    background-color: blue;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+button {
+  padding: 5px 20px;
+  background-color: springgreen;
+  font-weight: bold;
+}

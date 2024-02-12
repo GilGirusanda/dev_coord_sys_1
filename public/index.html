@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <style>
+      #map { height: 650px }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Data Selfie App</h1>
+    <div style="font-size: 24px;">
+      <a href="/" style="text-decoration: none;"><b>main</b></a> |
+      <a href="/logs" style="text-decoration: none;"><b>list</b></a>
+    </div>
+
+    <!-- LOG -->
+    <p>
+      <b>latitude:</b> <span id="latitude"></span>&deg;<br />
+      <b>longitude:</b> <span id="longitude"></span>&deg;
+    </p>
+
+    <!-- MAP -->
+    <div id="map"></div>
+
+    <!-- FORM -->
+    
+    <form>
+      <label for="point_name">Save your location</label><br>
+      <input id="point_name" value="loc1" /><br>
+      <button id="submit">submit</button>
+    </form>
+    <div style="display: block; padding: 20px;"></div>
+    <form>
+      <label>Clear the path</label><br>
+      <button id="delete">delete</button>
+    </form>
+    <br>
+    <script src="sketch.js"></script>
+  </body>
+</html>
