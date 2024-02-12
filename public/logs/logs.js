@@ -11,9 +11,14 @@ async function getData() {
     const pointName = document.createElement('div');
 
     pointName.textContent = `Point: ${item.point_name}`;
-    geo.textContent = `${item.lat}°, ${item.lon}°`;
+    geo.textContent = `Coordinates: ${item.lat}°, ${item.lon}°`;
     const dateString = new Date(item.timestamp).toLocaleString();
     date.textContent = dateString;
+
+    pointName.style.fontWeight = "900";
+    pointName.style.fontFamily = "Courier New";
+    geo.style.fontWeight = "900";
+    geo.style.fontFamily = "Courier New";
 
     root.append(pointName,geo,date);
     document.body.append(root);
